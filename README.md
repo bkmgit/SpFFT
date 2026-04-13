@@ -27,7 +27,7 @@ To allow for pre-allocation and reuse of memory, the design is based on two clas
 - **Grid**: Provides memory for transforms up to a given size.
 - **Transform**: Created with information on sparse input data and is associated with a *Grid*. Maximum size is limited by *Grid* dimensions. Internal reference counting to *Grid* objects guarantee a valid state until *Transform* object destruction.
 
-A transform can be computed in-place and out-of-place. Addtionally, an internally allocated work buffer can optionally be used for input / output of space domain data.
+A transform can be computed in-place and out-of-place. Additionally, an internally allocated work buffer can optionally be used for input / output of space domain data.
 
 ### New Features in v1.0
 - Support for externally allocated memory for space domain data including in-place and out-of-place transforms
